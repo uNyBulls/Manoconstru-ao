@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mano Construções - Sobre</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 22px 20px;
+    }
+
+    .header-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-container h1 {
+      font-size: 2.6rem;
+      letter-spacing: 1.2px;
+    }
+
+    .header-container img {
+      width: 110px;
+      height: auto;
+      border-radius: 8px;
+      background: white;
+      padding: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.18);
+      transition: transform 0.3s ease;
+    }
+
+    .header-container img:hover {
+      transform: scale(1.07);
+    }
+
+    .tagline {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    nav {
+      background: #34495e;
+    }
+
+    nav ul {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      flex: 1;
+      text-align: center;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 18px 0;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: background-color 0.25s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #34495e; /* azul escuro sólido */
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 18px;
+      border-bottom: 4px solid #34495e; /* azul escuro */
+      padding-bottom: 8px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 16px;
+    }
+
+    .info-image {
+      width: 100%;
+      border-radius: 12px;
+      margin: 25px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    ul.valores {
+      margin: 20px 0 40px 0;
+      padding-left: 20px;
+      font-size: 1.1rem;
+    }
+
+    ul.valores li {
+      margin-bottom: 12px;
+    }
+
+    strong {
+      color: #34495e; /* azul escuro */
+    }
+
+    a {
+      color: #34495e; /* azul escuro */
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 18px 15px;
+      font-size: 1rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .header-container {
+        flex-direction: column;
+        gap: 14px;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        flex: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>🏗️ Mano Construções</h1>
+      <img src="logo.png" alt="Logo Mano Construções" />
+    </div>
+    <p class="tagline">🛠️ Transformando projetos em realidade 🏡</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="sobre.html" class="active">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre a Empresa</h2>
+      <p>A <strong>Mano Construções</strong> é especializada em obras residenciais e comerciais. Buscamos sempre a satisfação de nossos clientes, com qualidade, eficiência e atenção aos detalhes em cada projeto executado.</p>
+      <p>Trabalhamos com materiais de primeira linha e equipe capacitada para entregar resultados superiores e duradouros.</p>
+
+      <img src="equipe.jpg" alt="Equipe Mano Construções" class="info-image" />
+
+      <p><strong>Missão:</strong> Oferecer serviços de construção com excelência, segurança e comprometimento, garantindo a realização dos sonhos dos nossos clientes.</p>
+      <p><strong>Visão:</strong> Ser referência no setor de construção civil pela qualidade dos nossos serviços e pela confiança que transmitimos.</p>
+      <p><strong>Valores:</strong></p>
+      <ul class="valores">
+        <li>✅ Comprometimento com prazos e resultados</li>
+        <li>✅ Qualidade e atenção aos detalhes</li>
+        <li>✅ Transparência e ética em cada etapa</li>
+        <li>✅ Respeito ao cliente e à sua visão</li>
+        <li>✅ Sustentabilidade e responsabilidade social</li>
+      </ul>
+
+      <p>Seja qual for o tamanho da sua obra ou reforma, conte com a <strong>Mano Construções</strong> para entregar um serviço completo, confiável e com o melhor custo-benefício.</p>
+      <p><a href="contato.html">📞 Fale conosco agora mesmo e solicite seu orçamento sem compromisso!</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mano Construções. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

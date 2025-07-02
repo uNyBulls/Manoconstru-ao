@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mano Construções - Início</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    color: #1f2d3d;
+    line-height: 1.6;
+  }
+
+  header {
+    background: #2c3e50;
+    color: white;
+    padding: 22px 20px;
+  }
+
+  .header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-container h1 {
+    font-size: 2.6rem;
+    letter-spacing: 1.2px;
+  }
+
+  .header-container img {
+    width: 110px;
+    height: auto;
+    border-radius: 8px;
+    background: white;
+    padding: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.18);
+    transition: transform 0.3s ease;
+  }
+
+  .header-container img:hover {
+    transform: scale(1.07);
+  }
+
+  .tagline {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #fafafa;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  }
+
+  nav {
+    background: #34495e;
+  }
+
+  nav ul {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    flex: 1;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 18px 0;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.25s ease;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: #34495e; /* azul escuro sólido */
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 18px;
+    border-bottom: 4px solid #34495e; /* mudou do verde para azul escuro */
+    padding-bottom: 8px;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+
+  /* Destaques de serviços */
+  .destaques {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .destaque-item {
+    background: white;
+    flex: 1 1 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .destaque-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  }
+
+  .destaque-item h3 {
+    margin-top: 12px;
+    font-size: 1.3rem;
+    color: #34495e; /* mudou para azul escuro */
+  }
+
+  .destaque-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .destaque-item .icone {
+    font-size: 3rem;
+  }
+
+  /* Chamada para ação */
+  .cta {
+    background: #34495e; /* mudou do verde para azul escuro */
+    color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .cta h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .cta a {
+    display: inline-block;
+    background: white;
+    color: #34495e; /* mudou para azul escuro */
+    padding: 14px 28px;
+    font-weight: 700;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta a:hover {
+    background-color: #2c3e50; /* um azul ainda mais escuro no hover */
+    color: white;
+  }
+
+  footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 18px 15px;
+    font-size: 1rem;
+    margin-top: 40px;
+  }
+
+  /* Responsivo */
+  @media (max-width: 900px) {
+    .destaques {
+      flex-direction: column;
+    }
+    .destaque-item {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .header-container {
+      flex-direction: column;
+      gap: 14px;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav ul li {
+      flex: none;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <h1>🏗️ Mano Construções</h1>
+    <img src="logo.png" alt="Logo Mano Construções" />
+  </div>
+  <p class="tagline">🛠️ Transformando projetos em realidade 🏡</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html" class="active">Início</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="inicio">
+    <h2>Bem-vindo à Mano Construções 👷‍♂️</h2>
+    <p>Com anos de experiência no setor de construção civil, realizamos serviços de alta qualidade com compromisso e excelência. Atuamos desde pequenas reformas até construções completas.</p>
+  </section>
+
+  <section id="destaques-servicos">
+    <h2>Serviços em Destaque</h2>
+    <div class="destaques">
+      <div class="destaque-item">
+        <div class="icone">🏠</div>
+        <h3>Construção Residencial</h3>
+        <p>Projetos personalizados para transformar seu sonho em realidade com qualidade e segurança.</p>
+      </div>
+      <div class="destaque-item">
+        <div class="icone">🔨</div>
+        <h3>Reformas e Manutenção</h3>
+        <p>Reformas completas, desde pequenos reparos até ampliações e modernizações.</p>
+      </div>
+      <div class="destaque-item">
+        <div class="icone">⚡</div>
+        <h3>Instalações Elétricas</h3>
+        <p>Serviços especializados para garantir segurança e eficiência em sua residência ou comércio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta-contato" class="cta">
+    <h3>Quer começar seu projeto conosco?</h3>
+    <a href="contato.html">Solicite um orçamento agora</a>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Mano Construções. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

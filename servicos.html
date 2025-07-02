@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mano Construções - Serviços</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f4;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 22px 20px;
+    }
+
+    .header-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-container h1 {
+      font-size: 2.6rem;
+      letter-spacing: 1.2px;
+    }
+
+    .header-container img {
+      width: 110px;
+      height: auto;
+      border-radius: 8px;
+      background: white;
+      padding: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.18);
+      transition: transform 0.3s ease;
+    }
+
+    .header-container img:hover {
+      transform: scale(1.07);
+    }
+
+    .tagline {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+
+    nav {
+      background: #34495e;
+    }
+
+    nav ul {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      flex: 1;
+      text-align: center;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 18px 0;
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: background-color 0.25s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #34495e;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 18px;
+      border-bottom: 4px solid #1abc9c;
+      padding-bottom: 8px;
+    }
+
+    ul.servicos-list {
+      list-style: none;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 20px;
+    }
+
+    ul.servicos-list li a {
+      color: #2c3e50;
+      text-decoration: none;
+      display: block;
+      padding: 12px 16px;
+      border-radius: 8px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border-bottom: none;
+      margin-bottom: 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+      background-color: #f9fafb;
+    }
+
+    ul.servicos-list li a:hover {
+      background-color: #34495e;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 18px 15px;
+      font-size: 1rem;
+      margin-top: 40px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      .header-container {
+        flex-direction: column;
+        gap: 14px;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        flex: none;
+      }
+      ul.servicos-list {
+        grid-template-columns: 1fr;
+      }
+      ul.servicos-list li a {
+        font-size: 1.3rem !important;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <h1>🏗️ Mano Construções</h1>
+    <img src="logo.png" alt="Logo Mano Construções" />
+  </div>
+  <p class="tagline">🛠️ Transformando projetos em realidade 🏡</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="servicos.html" class="active">Serviços</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <ul class="servicos-list">
+      <li><a href="contato.html?servico=Colocação%20de%20porcelanato">🏠 Colocação de porcelanato</a></li>
+      <li><a href="contato.html?servico=Piso%20cerâmico">🧱 Piso cerâmico</a></li>
+      <li><a href="contato.html?servico=Piso%20laminado">🪵 Piso laminado</a></li>
+      <li><a href="contato.html?servico=Piso%20vinílico">🎨 Piso vinílico</a></li>
+      <li><a href="contato.html?servico=Pinturas%20lisas">🖌️ Pinturas lisas</a></li>
+      <li><a href="contato.html?servico=Grafiato%20e%20textura">🏗️ Grafiato e textura</a></li>
+      <li><a href="contato.html?servico=Instalações%20elétricas%20residenciais">⚡ Instalações elétricas residenciais</a></li>
+      <li><a href="contato.html?servico=Instalações%20hidráulicas%20residenciais">🚰 Instalações hidráulicas residenciais</a></li>
+      <li><a href="contato.html?servico=Reformas%20em%20geral">🔨 Reformas em geral</a></li>
+      <li><a href="contato.html?servico=Construção%20de%20pergolados">🌿 Construção de pergolados</a></li>
+      <li><a href="contato.html?servico=Deck%20de%20madeira">🪚 Deck de madeira</a></li>
+      <li><a href="contato.html?servico=Aplicação%20de%20cimento%20queimado">🧱 Aplicação de cimento queimado</a></li>
+      <li><a href="contato.html?servico=Construção%20de%20casas%20completas%20desde%20a%20fundação">🏡 Construção de casas completas desde a fundação</a></li>
+      <li><a href="contato.html?servico=Outros">🔧 Outros</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Mano Construções. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
